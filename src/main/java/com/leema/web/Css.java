@@ -192,7 +192,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 @keyframes infoIn{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 @supports not (animation-timeline:view()){.shot{clip-path:inset(0)}.shot img{transform:scale(1)}.info{opacity:1;transform:none}}
 
-/* round "L" badge over the video's bottom-right corner (position computed in CSS from the video size) */
+/* round "V" badge over the video's bottom-right corner (position computed in CSS from the video size) */
 .vwrap{container-type:size}
 .mark{display:grid;--W:100cqw;--H:100cqh;--dw:max(var(--W),calc(var(--H) * VW / VH));--dh:max(var(--H),calc(var(--W) * VH / VW));
   --sz:clamp(30px,calc(var(--dw) * .07),130px);width:var(--sz);height:var(--sz);font-size:calc(var(--sz) * .45);

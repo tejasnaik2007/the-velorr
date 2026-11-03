@@ -1,7 +1,7 @@
-# Leema Residency (pure-Java recreation)
+# The Velorr (pure-Java recreation)
 
 A Spring Boot 3 (Java 17+, Maven) recreation of https://sensational-platypus-549c60.netlify.app,
-a one-page site for the Leema Residency lodge. It has a video hero, check-in/out times, 7 rooms plus parking,
+a one-page site for the The Velorr lodge. It has a video hero, check-in/out times, 7 rooms plus parking,
 a marquee gallery, contact details and directions, and WhatsApp/call buttons.
 
 **Everything is Java.** There are no templates and no `.html`, `.css`, `.js` or `.properties` sources, and the page

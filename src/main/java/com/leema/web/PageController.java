@@ -34,8 +34,8 @@ public class PageController {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Leema Residency | Rooms from ₹999 a night</title>
-<meta name="description" content="Leema Residency lodge. AC, non-AC, triple, four-bed rooms, hall, homestay and budget rooms. Check-in 12 noon. Book on WhatsApp.">
+<title>The Velorr | Rooms from ₹999 a night</title>
+<meta name="description" content="The Velorr lodge. AC, non-AC, triple, four-bed rooms, hall, homestay and budget rooms. Check-in 12 noon. Book on WhatsApp.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@ public class PageController {
 <body>
 
 <nav class="nav" id="nav">
-  <b>Leema Residency</b>
+  <b>The Velorr</b>
   <div class="links"><a href="#rooms">Rooms</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
 """);
         h.append("  <a class=\"call\" href=\"").append(TEL).append("\">Call ").append(esc(NAV_DISPLAY)).append("</a>\n</nav>\n\n");
@@ -57,10 +57,10 @@ public class PageController {
       <source src="image/hero%20page.webm" type="video/webm">
       <source src="image/hero%20page.mov" type="video/quicktime">
     </video>
-    <div class="mark" id="mark" aria-hidden="true">L</div>
+    <div class="mark" id="mark" aria-hidden="true">V</div>
   </div>
   <div class="content" id="heroText"><div class="wrap">
-    <h1 class="reveal">Leema Residency</h1>
+    <h1 class="reveal">The Velorr</h1>
     <p class="reveal d2">Rooms from ₹999 a night. Check in at 12 noon.</p>
     <div class="cta reveal d3">
 """);
@@ -105,8 +105,8 @@ public class PageController {
          .append("        <a class=\"btn dark\" href=\"https://maps.app.goo.gl/Z9vz9bHadsfyWSng8\" target=\"_blank\" rel=\"noopener\">Get directions</a>\n")
          .append("        <a class=\"btn line\" href=\"").append(TEL).append("\">Call now</a>\n")
          .append("        <a class=\"btn wa\" id=\"contactWa\" href=\"").append(bookWa).append("\">WhatsApp us</a>\n      </div>\n    </div>\n  </div>\n</div></section>\n\n");
-        h.append("<footer><div class=\"wrap\"><span>Leema Residency</span><span>").append(esc(DISPLAY)).append("</span></div></footer>\n")
-         .append("<div class=\"floats\" id=\"floats\">\n  <a class=\"float call\" href=\"").append(TEL).append("\" aria-label=\"Call Leema Residency\">Call</a>\n")
+        h.append("<footer><div class=\"wrap\"><span>The Velorr</span><span>").append(esc(DISPLAY)).append("</span></div></footer>\n")
+         .append("<div class=\"floats\" id=\"floats\">\n  <a class=\"float call\" href=\"").append(TEL).append("\" aria-label=\"Call The Velorr\">Call</a>\n")
          .append("  <a class=\"float wa\" id=\"floatWa\" href=\"").append(bookWa).append("\" aria-label=\"Book on WhatsApp\">WhatsApp</a>\n</div>\n\n</body>\n</html>\n");
         return h.toString();
     }
@@ -114,8 +114,8 @@ public class PageController {
     /** Port of section(r, i, extra). */
     private static String section(Room r, int i, int extra) {
         String price = r.p() > 0 ? "<div class=\"price\">₹" + inGroup(r.p()) + "<small>per night</small></div>" : "";
-        String msg = r.p() > 0 ? "Hello Leema Residency, I would like to book the " + r.n() + " (₹" + r.p() + " per night). Dates: "
-                               : "Hello Leema Residency, I would like to ask about parking.";
+        String msg = r.p() > 0 ? "Hello The Velorr, I would like to book the " + r.n() + " (₹" + r.p() + " per night). Dates: "
+                               : "Hello The Velorr, I would like to ask about parking.";
         String u = r.img() == null ? null : probe(r.img());
         String fig = u != null
                 ? "<figure class=\"shot\" data-name=\"" + esc(r.n()) + "\"><img src=\"" + esc(u) + "\" alt=\"" + esc(r.n()) + "\" loading=\"lazy\"></figure>"
@@ -129,7 +129,7 @@ public class PageController {
 
     private static String figures(List<String> urls) {
         StringBuilder b = new StringBuilder();
-        for (String u : urls) b.append("<figure><img src=\"").append(esc(u)).append("\" alt=\"Leema Residency\" loading=\"lazy\"></figure>");
+        for (String u : urls) b.append("<figure><img src=\"").append(esc(u)).append("\" alt=\"The Velorr\" loading=\"lazy\"></figure>");
         return b.toString();
     }
 

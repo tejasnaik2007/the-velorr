@@ -21,7 +21,7 @@ public final class Site {
     public static final String NAV_DISPLAY = "82964 97253";
     public static final String FOLDER = "image/";
     public static final List<String> EXTS = List.of("jpg", "jpeg", "png", "webp", "JPG", "JPEG", "PNG", "WEBP");
-    public static final String BOOK_MSG = "Hello Leema Residency, I would like to book a room. Dates: ";
+    public static final String BOOK_MSG = "Hello The Velorr, I would like to book a room. Dates: ";
 
     /** n = name, img = image base name in /image, d = description, p = price per night (0 = no price). */
     public record Room(String n, String img, String d, int p) {}
